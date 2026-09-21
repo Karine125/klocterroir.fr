@@ -547,6 +547,9 @@ section.tight { padding: var(--space-5) 0; }
 }
 .faq-item[open] summary::after { transform: rotate(45deg); }
 .faq-item p { padding-bottom: var(--space-3); color: var(--taupe); margin: 0; max-width: 68ch; }
+.faq-item p:not(:last-child) { padding-bottom: 0.6rem; }
+.faq-item ul { color: var(--taupe); margin: 0 0 0.6rem; padding-left: 1.2rem; max-width: 68ch; }
+.faq-item li { margin-bottom: 0.2rem; }
 
 /* CTA band ---------------------------------------------------------------- */
 .cta-band {
