@@ -687,6 +687,36 @@ section.tight { padding: var(--space-5) 0; }
 }
 .bio-hero img { border-radius: var(--radius); }
 
+.bio-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-top: var(--space-3);
+}
+.bio-stat { display: flex; flex-direction: column; }
+.bio-stat-figure {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: var(--bronze);
+}
+.bio-stat-label {
+  font-size: 0.85rem;
+  color: var(--taupe);
+  max-width: 18ch;
+  margin-top: 0.2rem;
+}
+
+.pull-quote {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  line-height: 1.35;
+  color: var(--ink);
+  margin: 0 0 var(--space-3);
+  padding-left: 1.2rem;
+  border-left: 4px solid var(--bronze);
+  max-width: 30ch;
+}
+
 /* Form -------------------------------------------------------------------- */
 .contact-grid {
   display: grid;
