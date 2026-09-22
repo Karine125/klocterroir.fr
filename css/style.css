@@ -524,6 +524,35 @@ section.tight { padding: var(--space-5) 0; }
   color: var(--green);
 }
 
+.split-bar { margin-top: var(--space-3); }
+.split-bar-track {
+  display: flex;
+  width: 100%;
+  height: 18px;
+  border-radius: 9px;
+  overflow: hidden;
+  background: var(--sand-mid);
+}
+.split-bar-seg { height: 100%; }
+.split-bar-seg.is-prestation { background: var(--bronze); }
+.split-bar-seg.is-domaine { background: var(--green); }
+.split-bar-legend {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--taupe);
+}
+.split-bar-legend .dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin-right: 0.4em;
+}
+.split-bar-legend .dot.is-prestation { background: var(--bronze); }
+.split-bar-legend .dot.is-domaine { background: var(--green); }
+
 .comparison-table {
   width: 100%;
   border-collapse: collapse;
